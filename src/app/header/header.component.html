@@ -1,0 +1,25 @@
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">To-Do App</a>
+      <ul appDropdown>
+        <a href="#" class="dropdown-toggler" type="button" role="button" >
+            <span class="navbar-toggler-icon"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="nav-link active"href="#" (click)="onSelected('todo')">ToDos</a></li>
+        </ul>
+      </ul>
+   
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active"href="#" (click)="onSelected('todo')">ToDos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" (click)="onSelected('detail')">Details</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
