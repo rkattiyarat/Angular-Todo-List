@@ -21,8 +21,6 @@ export class TodoComponent implements OnInit{
   }
 
   addToActive(todo: string, isChecked: boolean){
-
-  if(isChecked){
     if(isChecked){
       this.activeList.push(todo);
       console.log(this.activeList);
@@ -31,8 +29,6 @@ export class TodoComponent implements OnInit{
       this.activeList = this.activeList.filter(item => item !== todo);
       console.log(this.activeList);
     }
-    
-  }
   }
 
 }
