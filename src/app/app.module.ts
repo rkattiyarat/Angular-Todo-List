@@ -5,17 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TodoComponent } from './todo/todo.component';
-import { DetailComponent } from './detail/detail.component';
 import { DropdownDirective } from './dropdown.directive';
 import { FormsModule } from '@angular/forms';
+import { ActiveComponent } from './active/active.component';
+import { CompletedComponent } from './completed/completed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TodoComponent,
-    DetailComponent,
-    DropdownDirective
+    DropdownDirective,
+    ActiveComponent,
+    CompletedComponent
   ],
   imports: [
     BrowserModule,
