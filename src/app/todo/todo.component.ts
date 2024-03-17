@@ -20,14 +20,14 @@ export class TodoComponent implements OnInit{
     this.taskInput.nativeElement.value = '';
   }
 
-  addToActive(todo: string, isChecked: boolean){
+  addToCompleted(todo: string, isChecked: boolean){
     if(isChecked){
-      this.activeList.push(todo);
-      console.log(this.activeList);
+      this.completedList.push(todo);
+      console.log(this.completedList);
     }
     else{
-      this.activeList = this.activeList.filter(item => item !== todo);
-      console.log(this.activeList);
+      this.completedList = this.completedList.filter(item => item !== todo);
+      console.log(this.completedList);
     }
   }
 
