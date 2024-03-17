@@ -35,15 +35,15 @@
                 <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
                   aria-labelledby="ex1-tab-1">
                   <ul class="list-group mb-0" *ngFor="let todo of taskList">
-                    <!-- <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                      style="background-color: #f4f6f7;">
-                      <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                      Cras justo odio
-                    </li> -->
                     <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                      style="background-color: grey">
-                      <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." (change)="addToCompleted(todo, $event.target.checked)"/>
+                      style="background-color: rgb(158, 151, 151)">
+                      <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." 
+                      (change)="addToCompleted(todo, $event.target.checked)"/>
                       {{todo}}
+                      <button class="btn btn-outline-primary ms-auto" type="button" aria-label="Edit"
+                      (click)="editTodo(todo)">Edit</button>
+                      <button class="btn btn-outline-danger" type="button" aria-label="Delete"
+                        (click)="deleteTodo(todo)">Delete</button>
                     </li>
                   </ul>
                 </div>

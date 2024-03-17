@@ -31,4 +31,13 @@ export class TodoComponent implements OnInit{
     }
   }
 
+  editTodo(todo: string){
+    this.taskInput.nativeElement.value = todo;
+    this.taskList = this.taskList.filter(item => item !== todo);
+  }
+
+  deleteTodo(todo: string){
+    this.taskList = this.taskList.filter(item => item !== todo);
+  }
+
 }
